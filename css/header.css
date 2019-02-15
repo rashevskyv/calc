@@ -1,0 +1,131 @@
+/*overal size of the header*/
+.header {
+    /*height: 13vh;*/
+    height: 160px;
+    width: 100%;
+}
+
+/*size and colors in navbar*/
+.header__nav {
+    background-color: #7f7f7f;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex; /*make navbar content is flexible*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*navmenu size and position*/
+.nav__wrapper {
+    /*width: 45vw;*/
+    /*margin: 0.7vh auto 0.8vh auto;*/
+    min-width: 550px;
+    width: 590px;
+    position: absolute;
+}
+
+/*style for each item on navmenu*/
+.nav__item, .sociallink_item {
+    height: 20px;
+    /*height: 1.4vh;*/
+    list-style-type: none;
+    border-left: 1px white solid;
+    padding: 5px 12px;
+    /*padding: 0.28vh 12px;*/
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    /*font-size: 1.25vh;*/
+}
+
+/*disable left border on navmenu*/
+.nav__item:first-child {
+    border-left: 0;
+}
+
+/*position of lang and search elements in navbar*/
+.nav-addition__wrapper {
+    position: relative;
+    left: 380px;
+}
+
+.nav-addition {
+    width: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*styles for profile and search*/
+.nav__icons {
+    min-width: 40px;
+    /*width: 3.5vw;*/
+    /*font-size: 1.35vh;*/
+    width: 65px;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/*paddings for lang items*/
+.nav__lang > .nav > .nav__item {
+    /*padding: 0.4vh 7px;*/
+    padding: 0 7px;
+}
+
+/*height of bottom part of header*/
+.header__bottom {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*posotion of bottom part of header*/
+.header-bottom__wrapper {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*style of bottom part of header*/
+.header-bottom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    width: 900px;
+    margin: auto;
+}
+
+/*Block with callback information*/
+.call-us {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 510px;
+    height: 100%;
+}
+
+/*phone number styles*/
+.phone-number {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.phone-number > img {
+    margin-right: 10px;
+}
+
+/*button color modifier*/
+.call-us__button--orange {
+    background-color: #ef9400;
+}
+
+.call-us__button--orange:hover, .call-us__button--orange:active, .call-us__button--orange:focus {
+    border: none;
+    outline: none;
+    background-color: #de8900;
+}

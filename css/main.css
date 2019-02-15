@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+html, body {
+    height: fit-content;
+    font-family: "Open Sans", "Myriad Pro", sans-serif;
+}
+
+/*make footer on bottom andheader on top*/
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*overal link styles*/
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+button {
+    padding: 14px 35px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+button:hover, button:active, botton:focus {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.main {
+    background-color: grey;
+    height: 980px;
+    position: relative;
+}
+
+.main-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 855px;
+    width: 1200px;
+    background-color: #fff;
+}
