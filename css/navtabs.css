@@ -30,9 +30,9 @@
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
     border-right: 1px #e2e2e2 solid !important;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 23px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.75);
     position: relative;
     transition: none;
 }
@@ -40,7 +40,7 @@
 .navtabs__link::before {
     content:'';
     position:absolute;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: -15px;
     bottom: -2px;
@@ -53,7 +53,7 @@
 .navtabs__link::after {
     content:'';
     position:absolute;
-    z-index: 0;
+    z-index: -1;
     top: 0;
     left: -15px;
     bottom: -2px;
@@ -85,3 +85,6 @@
     color: #fff;
 }
 
+.navtab__link-text {
+    font-size: 14px;
+}
