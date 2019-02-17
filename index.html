@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navtabs.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <meta charset="UTF-8">
@@ -55,11 +56,12 @@
                     <div class="logo"><img src="img/logo.png" alt="NIKS-m logo"></div>
                     <div class="call-us">
                         <div class="call-us__phone-number"><span class="phone-number"><img src="img/ks.png"
-                                                                                           alt="Киевстар"><a href="tel:+380675533991">067 553 39 91</a></span>
+                                                                                           alt="Киевстар"><a
+                                href="tel:+380675533991">067 553 39 91</a></span>
                         </div>
                         <div class="call-us__icon"><img src="img/support_icon.png" alt=""></div>
                         <div class="call-us__button">
-                            <button type="button" class="call-us__button--orange">Перезвонить Вам?</button>
+                            <button type="button" class="call-us__button">Перезвонить Вам?</button>
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,156 @@
 
     <main class="main">
         <div class="main-wrapper">
-            <div class="calc"></div>
+
+            <div class="navtabs-wrapper">
+                <ul class="navtabs nav nav-tabs" id="myTab" role="tablist">
+                    <li class="navtabs__item nav-item">
+                        <a class="navtabs__link nav-link active" id="step1-tab" data-toggle="tab" href="#step1"
+                           role="tab" aria-controls="home" aria-selected="true"><span class="navtab__link-text">1. Тип окна</span></a>
+                    </li>
+                    <li class="navtabs__item nav-item">
+                        <a class="navtabs__link nav-link" id="step2-tab" data-toggle="tab" href="#step2" role="tab"
+                           aria-controls="profile" aria-selected="false"><span
+                                class="navtab__link-text">2. Размер окна</span></a>
+                    </li>
+                    <li class="navtabs__item nav-item">
+                        <a class="navtabs__link nav-link" id="step3-tab" data-toggle="tab" href="#step3" role="tab"
+                           aria-controls="contact" aria-selected="false"><span
+                                class="navtab__link-text">3. Комплектация</span></a>
+                    </li>
+                    <li class="navtabs__item nav-item">
+                        <a class="navtabs__link nav-link" id="step4-tab" data-toggle="tab" href="#step4" role="tab"
+                           aria-controls="contact" aria-selected="false"><span class="navtab__link-text">4. Сопутствующие</span></a>
+                    </li>
+                    <li class="navtabs__item nav-item">
+                        <a class="navtabs__link nav-link" id="step5-tab" data-toggle="tab" href="#step5" role="tab"
+                           aria-controls="contact" aria-selected="false"><span
+                                class="navtab__link-text">5. Ваша цена</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="calc__shadowbox"></div>
+            <div class="calc">
+                <div class="calc-content tab-pane fade show active" id="step1" role="tabpanel"
+                     aria-labelledby="step1-tab">
+                    <div class="calc-content__description">
+                        <h2>Выберите тип будущего окна</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet beatae commodi,
+                            distinctio ducimus hic ipsam ipsum iure minima nesciunt, nihil nostrum obcaecati odit quas
+                            qui quod sint velit veritatis!</p>
+                    </div>
+                    <div class="calc-content__types">
+                        <div class="container">
+
+                            <div class="row justify-content-between">
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/2-parts.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">2-частное</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/3-parts.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">3-частное</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/balcony_block_1.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Балконный<br>блок</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/balcony_block_2.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Балконный<br>блок</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/custom.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Не стандартный тип</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between">
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/loggia.png" alt="2-частное окно"
+                                                 class="justifu-align-start">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Лоджия</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/balcony.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Балкон</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product-type">
+                                        <div class="product-type__img">
+                                            <img src="img/windows/balcony_2.png" alt="2-частное окно">
+                                        </div>
+                                        <div class="product-type__button-container">
+                                            <button class="product-type__button">Балкон</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-content tab-pane fade" id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                    step2
+                </div>
+                <div class="calc-content tab-pane fade" id="step3" role="tabpanel" aria-labelledby="step3-tab">
+                    step3
+                </div>
+                <div class="calc-content tab-pane fade" id="step4" role="tabpanel" aria-labelledby="step4-tab">
+                    step4
+                </div>
+                <div class="calc-content tab-pane fade" id="step5" role="tabpanel" aria-labelledby="step5-tab">
+                    step5
+                </div>
+            </div>
         </div>
     </main>
 
@@ -89,7 +240,8 @@
                 <div class="footer-right-wrapper">
                     <div class="callback"><img src="img/callback.png" alt=""> Заказать обратный звонок</div>
                     <ul class="sociallink">
-                        <li class="sociallink_item"><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li><!--
+                        <li class="sociallink_item"><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        </li><!--
                     -->
                         <li class="sociallink_item"><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></li>
                     </ul>

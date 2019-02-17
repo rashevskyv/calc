@@ -118,14 +118,3 @@
 .phone-number > img {
     margin-right: 10px;
 }
-
-/*button color modifier*/
-.call-us__button--orange {
-    background-color: #ef9400;
-}
-
-.call-us__button--orange:hover, .call-us__button--orange:active, .call-us__button--orange:focus {
-    border: none;
-    outline: none;
-    background-color: #de8900;
-}
