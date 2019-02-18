@@ -30,9 +30,9 @@
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
     border-right: 1px #e2e2e2 solid !important;
-    -webkit-box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 23px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 0px 1px 0px rgba(0, 0, 0, 0.75);
     position: relative;
     transition: none;
 }
@@ -46,7 +46,7 @@
     bottom: -2px;
     width: 30px;
     background: #fff;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    box-shadow: 3px 2px 2px rgba(0,0,0,.4);
     transform: skew(25deg);
 }
 
@@ -59,8 +59,11 @@
     bottom: -2px;
     width: 30px;
     background: #fff;
-    box-shadow: -2px 2px 2px rgba(0,0,0,.4);
+    box-shadow: -3px 2px 2px rgba(0,0,0,.4);
     transform: skew(-25deg);
+}
+.navtabs__item:first-child .navtabs__link::after {
+    z-index: 0;
 }
 
 .navtabs__link.active, .navtabs__link.active::after, .navtabs__link.active::before {
@@ -88,3 +91,67 @@
 .navtab__link-text {
     font-size: 14px;
 }
+
+.navbuttons {
+    justify-content: space-between;
+}
+
+.navbutton__item {
+    width: fit-content;
+    flex: 0;
+}
+
+.navbutton__link {
+    width: 140px;
+}
+
+.navbutton__link:first-child {
+    -webkit-box-shadow: 2px 1px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 2px 1px 3px rgba(0,0,0,.4);
+    box-shadow: 2px 1px 3px rgba(0,0,0,.4);
+    color: black;
+}
+
+.navbutton__link-text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbutton__item:first-child .navbutton__link-text {
+    position: relative;
+    left: -8px;
+}
+
+.navbutton__item:last-child .navbutton__link-text {
+    position: relative;
+    left: 8px;
+}
+
+.navbutton__item:first-child .navbutton__link::before {
+    content: none;
+}
+
+.navbutton__link::before {
+    transform: skew(-25deg);
+    bottom: -1px;
+    top: -2px;
+    -webkit-box-shadow: 3px 0px 2px rgba(0,0,0,.4);
+    -moz-box-shadow: 3px 0px 2px rgba(0,0,0,.4);
+    box-shadow: 3px 0px 2px rgba(0,0,0,.4);
+}
+
+.navbutton__item:last-child .navbutton__link::after {
+    content: none;
+}
+
+.navbutton__link::after {
+    transform: skew(25deg);
+    bottom: -1px;
+    top: -2px;
+    z-index: -1!important;
+    -webkit-box-shadow: 2px 1px 1px rgba(0,0,0,.1);
+    -moz-box-shadow: 2px 1px 1px rgba(0,0,0,.1);
+    box-shadow: 2px 1px 1px rgba(0,0,0,.1);
+}
+
