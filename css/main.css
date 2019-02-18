@@ -46,7 +46,7 @@ button {
     background-color: #ef9400;
 }
 
-button:hover, button:active, botton:focus {
+button:hover, button:active, button:focus {
     border: none;
     outline: none;
     background-color: #de8900;
@@ -79,20 +79,24 @@ button:hover, button:active, botton:focus {
     -moz-border-radius: 10px;
     border-radius: 10px;
     border: 1px #b0b0b0 solid;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 0 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 1px 0 5px 0 rgba(0,0,0,0.75);
     position: relative;
     z-index: 2;
+}
+
+.calc > * > * {
+    z-index: 99;
 }
 
 .calc__shadowbox {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 300px 42px rgba(255,255,255,0.6);
-    -moz-box-shadow: 0px 0px 300px 42px rgba(255,255,255,0.6);
-    box-shadow: 0px 0px 300px 42px rgba(255,255,255,0.6);
+    -webkit-box-shadow: 0 0 300px 42px rgba(255,255,255,0.6);
+    -moz-box-shadow: 0 0 300px 42px rgba(255,255,255,0.6);
+    box-shadow: 0 0 300px 42px rgba(255,255,255,0.6);
     background-color: transparent;
     height: 760px;
     width: 100%;
@@ -109,6 +113,9 @@ button:hover, button:active, botton:focus {
     right: 0;
     bottom: 0;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .calc-content__description h2 {
@@ -157,3 +164,87 @@ button:hover, button:active, botton:focus {
     z-index: 99;
 }
 
+/*step2_2 input*/
+
+.calc-content-wrapper {
+    height: 150px;
+    display: flex;
+    align-items: start;
+}
+
+.order {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__label {
+    font-size: 18px;
+}
+
+.order__name, .order__phone {
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    padding-left: 20px;
+}
+
+.order__name:focus::placeholder, .order__phone:focus::placeholder {
+    color: transparent;
+}
+
+.order__order-button {
+    font-size: 16px;
+    width: 160px;
+}
+
+/*step2*/
+.window-type {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 550px;
+    flex-direction: row;
+}
+
+.window-type__picture {
+    width: 26%;
+}
+
+.window-type__types {
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.window-type__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.each-window-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #ef9400;
+}
+
+.each-window-type__button:hover+.each-window-type {
+    background-color: #de8900;
+}
+
+.each-window-type__button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
