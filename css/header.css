@@ -108,6 +108,11 @@
     height: 100%;
 }
 
+.call-us__icon > img{
+    width: 39px;
+    height: 45px;
+}
+
 /*phone number styles*/
 .phone-number {
     display: flex;
