@@ -254,3 +254,90 @@ button:hover, button:active, button:focus {
     font-weight: 800;
     letter-spacing: 1px;
 }
+
+/*step3*/
+
+.step3-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.window-class {
+    border: none!important;
+    justify-self: start;
+}
+
+.window-class__header {
+    height: 140px;
+    background-color: #ef9400;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px!important;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.window-class__type {
+    border: 0;
+}
+
+.window-class__name {
+    width: 225px;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.window-class__parts > p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 15px;
+    width: 130px;
+    word-wrap: normal;
+}
+
+.windows-class__button {
+    color: #ef9400;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.windows-class__button:hover, .windows-class__button:focus, .windows-class__button:active {
+    background-color: #faead2;
+    /*color: zfff;*/
+}
+
+.window-class__body {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.window-class__body:before {
+    content: url("../img/info.png");
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 7px 10px 0 0;
+}
+
+.window-class__type:not(:last-child) .window-class__body {
+    margin-top: -15px!important;
+}
+
+.window-class__parts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
