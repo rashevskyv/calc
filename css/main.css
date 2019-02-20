@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
 
 * {
     box-sizing: border-box;
@@ -175,13 +176,15 @@ button:hover, button:active, button:focus {
 }
 
 .order {
-    width: 800px;
+    width: 75%;
     display: flex;
     justify-content: space-between;
 }
 
 .order__label {
     font-size: 18px;
+    align-self: start;
+    padding-bottom: 10px;
 }
 
 .order__name, .order__phone {
@@ -396,7 +399,7 @@ button:hover, button:active, button:focus {
 }
 
 .lamination {
-    height: 83px;
+    height: 78px;
 }
 
 .overlay {
@@ -467,3 +470,255 @@ button:hover, button:active, button:focus {
 }
 
 /*step5*/
+
+.step5-head-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.hotline-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.hotline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotline__icon > img {
+    width: 53px;
+    height: 63px;
+}
+
+.hotline__name {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hotline__phone {
+    font-size: 33px;
+    font-weight: 800;
+}
+
+.hotline__callback {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.total {
+    height: 275px;
+    width: 100%;
+}
+
+.total-overal {
+    height: 160px;
+    width: 100%;
+    background-color: #f79500;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    margin-bottom: 15px;
+}
+
+.total-overal {
+    display: flex;
+    color: white;
+}
+
+.total-overview {
+    display: flex;
+    height: 100%;
+}
+
+.total-overal__image > img {
+    max-height: 120px;
+}
+
+.param {
+    font-weight: 800;
+}
+
+.param:after {
+    content: ': ';
+}
+
+.value:not(:last-child):after {
+    content: ', ';
+}
+
+.total-overview p {
+    margin-bottom: 10px!important;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total-overview__col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.total-overview__col.left {
+    min-width: fit-content;
+    max-width: 320px;
+}
+
+.price-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.price__total {
+    width: fit-content;
+    margin-right: 50px;
+}
+
+.price__total > p {
+    font-size: 18px;
+}
+
+.price__total > input {
+    width: 66px;
+    height: 32px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px grey solid;
+    text-align: center;
+}
+
+.price__total > input[type='number'] {
+    -moz-appearance: none;
+}
+
+.price__total > input::-webkit-outer-spin-button,
+.price__total > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price__cost {
+    width: fit-content;
+}
+
+.price__total > h1 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 53px;
+    font-weight: 600;
+    color: #f79500;
+    margin-top: -20px;
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__shipping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.promo span {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.promo img {
+    margin: 10px;
+}
+
+.promo__shipping:before {
+    content: '+';
+    font-size: 18px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.step5-bottom-wrapper {
+    height: 250px;
+    display: flex;
+}
+
+.step5-bottom-wrapper > div {
+    width: calc(100%/3);
+}
+
+.step5-bottom-wrapper > div:not(:last-child) {
+    border-right: 1px #ef9400 solid;
+}
+
+.iq-energy__logo{
+    margin-bottom: 10px;
+}
+
+.iq-energy__header {
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.iq-energy__description {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+}
+
+.iq-energy__link {
+    text-decoration: underline;
+}
+
+.iq-energy__link:hover, .iq-energy__link:focus, .iq-energy__link:active {
+    text-decoration: none;
+    color: black;
+}
+
+.checkout-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+}
+
+.checkout-wrapper > h3 {padding-left: 35px}
+
+.final-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.final-menu > button {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
