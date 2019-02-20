@@ -39,6 +39,9 @@ a:hover {
     color: #000;
 }
 
+p {
+    margin-bottom: 20px;}
+
 button {
     padding: 14px 35px;
     outline: none;
@@ -210,7 +213,7 @@ button:hover, button:active, button:focus {
     align-items: start;
     justify-content: start;
     width: 100%;
-    height: 550px;
+    height: 520px;
     flex-direction: row;
 }
 
@@ -349,15 +352,12 @@ button:hover, button:active, button:focus {
 /*step4*/
 
 .additional-element-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    height: 45%;
 }
 
 .addons {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -366,16 +366,24 @@ button:hover, button:active, button:focus {
     display: none;
 }
 
-.additional-element {
+.additional-element__label {
+    height: 155px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.additional-element__container {
+    height: 100%;
+    position: relative;
+    top: -170px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 7px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 100%;
+    z-index: -1;
 }
 
 .additional-element__picture {
@@ -396,6 +404,18 @@ button:hover, button:active, button:focus {
     background-color: #e5e5e5;
     width: inherit;
     height: inherit;
+}
+.lamination-wrapper{
+    height: 35%;
+    width: 100%;
+}
+
+.lamination-header {
+    align-self: start;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .lamination {
@@ -426,13 +446,12 @@ button:hover, button:active, button:focus {
     position: absolute;
 }
 
-.additional-element:hover .overlay {
+.additional-element__label:hover + .additional-element__container .overlay {
     display: inline-block;
-    cursor: pointer;
     position: absolute;
 }
 
-.additional-element__checker:checked + .additional-element > .additional-element__picture > .radio-checked {
+.additional-element__checker:checked ~ .additional-element__container > .additional-element__picture > .radio-checked {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +461,7 @@ button:hover, button:active, button:focus {
     box-shadow: 3px 2px 2px rgba(0, 0, 0, .4);
 }
 
-.additional-element__checker:checked + .additional-element > .additional-element__picture > .overlay {
+.additional-element__checker:checked ~ .additional-element__container > .additional-element__picture > .overlay {
     display: inline-block;
     cursor: pointer;
     position: absolute;
@@ -454,19 +473,6 @@ button:hover, button:active, button:focus {
     text-transform: uppercase;
     text-align: center;
     width: 127px;
-}
-
-.lamination-wrapper{
-    width: 100%;
-    height: fit-content;
-}
-
-.lamination-header {
-    align-self: start;
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding-bottom: 20px;
 }
 
 /*step5*/
@@ -500,14 +506,16 @@ button:hover, button:active, button:focus {
     text-transform: uppercase;
 }
 
-.hotline__phone {
+.hotline__phone, .hotline__phone:hover {
     font-size: 33px;
     font-weight: 800;
+    color: black;
 }
 
-.hotline__callback {
+.hotline__callback, .hotline__callback:hover {
     font-size: 16px;
     text-decoration: underline;
+    color: black;
 }
 
 .total {
@@ -601,10 +609,6 @@ button:hover, button:active, button:focus {
     border-radius: 5px;
     border: 1px grey solid;
     text-align: center;
-}
-
-.price__total > input[type='number'] {
-    -moz-appearance: none;
 }
 
 .price__total > input::-webkit-outer-spin-button,

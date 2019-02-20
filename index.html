@@ -105,7 +105,7 @@
             <div class="calc__shadowbox"></div>
             <div class="calc">
                 <!--step1-->
-                <div class="calc-content tab-pane fade show active" id="step1" role="tabpanel"
+                <div class="calc-content tab-pane fade" id="step1" role="tabpanel"
                      aria-labelledby="step1-tab">
                     <div class="calc-content__description">
                         <h2>Выберите тип будущего окна</h2>
@@ -169,8 +169,10 @@
                                             <img src="img/windows/custom.png" alt="Не стандартный тип">
                                         </div>
                                         <div class="product-type__button-container">
-                                            <button class="product-type__button" id="step2_2-tab" data-toggle="tab" href="#step2_2"
-                                                                                   role="tab" aria-controls="home" aria-selected="true">Не стандартный тип</a> </button>
+                                            <button class="product-type__button" id="step2_2-tab" data-toggle="tab"
+                                                    href="#step2_2"
+                                                    role="tab" aria-controls="home" aria-selected="true">Не стандартный
+                                                тип</a> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -502,7 +504,7 @@
                     </div>
                 </div>
                 <!--step4-->
-                <div class="calc-content tab-pane fade" id="step4" role="tabpanel"
+                <div class="calc-content tab-pane fade show active" id="step4" role="tabpanel"
                      aria-labelledby="step4-tab">
                     <div class="calc-content__description">
                         <h2>Выберите сопутствующие элементы</h2>
@@ -514,11 +516,12 @@
                     </div>
 
                     <div class="additional-element-wrapper">
-                        <form action="" id="additional-element" class="addons">
+                        <form class="addons" action="" id="additional-element">
                             <div class="each-additional-element">
-                                <input id="mount" type="checkbox" name="additional-element"
-                                       class="additional-element__checker">
-                                <label for="mount" class="additional-element">
+                                <input class="additional-element__checker" id="mount" type="checkbox"
+                                       name="additional-element">
+                                <label class="additional-element__label" for="mount"></label>
+                                <div class="additional-element__container">
                                     <div class="additional-element__picture">
                                         <i class="fas fa-check radio-checked"></i>
                                         <div class="overlay"></div>
@@ -527,13 +530,14 @@
                                     <div class="additional-element__description">
                                         Монтаж окон
                                     </div>
-                                </label>
-                            </div>
 
+                                </div>
+                            </div>
                             <div class="each-additional-element">
-                                <input id="mosq_cell" type="checkbox" name="additional-element"
-                                       class="additional-element__checker">
-                                <label for="mosq_cell" class="additional-element">
+                                <input class="additional-element__checker" id="mosq_cell" type="checkbox"
+                                       name="additional-element">
+                                <label class="additional-element__label" for="mosq_cell"></label>
+                                <div class="additional-element__container">
                                     <div class="additional-element__picture">
                                         <i class="fas fa-check radio-checked"></i>
                                         <div class="overlay"></div>
@@ -542,13 +546,14 @@
                                     <div class="additional-element__description">
                                         Москитная сетка
                                     </div>
-                                </label>
-                            </div>
 
+                                </div>
+                            </div>
                             <div class="each-additional-element">
-                                <input id="outflow" type="checkbox" name="additional-element"
-                                       class="additional-element__checker">
-                                <label for="outflow" class="additional-element">
+                                <input class="additional-element__checker" id="outflow" type="checkbox"
+                                       name="additional-element">
+                                <label class="additional-element__label" for="outflow"></label>
+                                <div class="additional-element__container">
                                     <div class="additional-element__picture">
                                         <i class="fas fa-check radio-checked"></i>
                                         <div class="overlay"></div>
@@ -557,13 +562,14 @@
                                     <div class="additional-element__description">
                                         Оконный отлив
                                     </div>
-                                </label>
-                            </div>
 
+                                </div>
+                            </div>
                             <div class="each-additional-element">
-                                <input id="sill" type="checkbox" name="additional-element"
-                                       class="additional-element__checker">
-                                <label for="sill" class="additional-element">
+                                <input class="additional-element__checker" id="sill" type="checkbox"
+                                       name="additional-element">
+                                <label class="additional-element__label" for="sill"></label>
+                                <div class="additional-element__container">
                                     <div class="additional-element__picture">
                                         <i class="fas fa-check radio-checked"></i>
                                         <div class="overlay"></div>
@@ -572,13 +578,14 @@
                                     <div class="additional-element__description">
                                         ПВХ подоконник
                                     </div>
-                                </label>
-                            </div>
 
+                                </div>
+                            </div>
                             <div class="each-additional-element">
-                                <input id="visor" type="checkbox" name="additional-element"
-                                       class="additional-element__checker">
-                                <label for="visor" class="additional-element">
+                                <input class="additional-element__checker" id="visor" type="checkbox"
+                                       name="additional-element">
+                                <label class="additional-element__label" for="visor"></label>
+                                <div class="additional-element__container">
                                     <div class="additional-element__picture">
                                         <i class="fas fa-check radio-checked"></i>
                                         <div class="overlay"></div>
@@ -587,95 +594,99 @@
                                     <div class="additional-element__description">
                                         Балконный козырёк
                                     </div>
-                                </label>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="lamination-wrapper">
+                        <h3 class="lamination-header">Цветная ламинация</h3>
+                        <form class="addons" action="" id="lamination">
+
+                            <div class="each-additional-element">
+                                <input class="additional-element__checker" id="none" type="radio"
+                                       name="lamination" checked>
+                                <label class="additional-element__label" for="none"></label>
+                                <div class="additional-element__container">
+                                    <div class="additional-element__picture lamination">
+                                        <i class="fas fa-check radio-checked"></i>
+                                        <div class="overlay"></div>
+                                        <div class="empty"></div>
+                                    </div>
+                                    <div class="additional-element__description">
+                                        Без ламинации
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="each-additional-element">
+                                <input class="additional-element__checker" id="oak" type="radio"
+                                       name="lamination">
+                                <label class="additional-element__label" for="oak"></label>
+                                <div class="additional-element__container">
+                                    <div class="additional-element__picture lamination">
+                                        <i class="fas fa-check radio-checked"></i>
+                                        <div class="overlay"></div>
+                                        <img src="img/additional/lam_oak.png" alt="Золотой дуб">
+                                    </div>
+                                    <div class="additional-element__description">
+                                        Золотой дуб
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="each-additional-element">
+                                <input class="additional-element__checker" id="walnut" type="radio"
+                                       name="lamination">
+                                <label class="additional-element__label" for="walnut"></label>
+                                <div class="additional-element__container">
+                                    <div class="additional-element__picture lamination">
+                                        <i class="fas fa-check radio-checked"></i>
+                                        <div class="overlay"></div>
+                                        <img src="img/additional/lam_walnut.png" alt="Орех">
+                                    </div>
+                                    <div class="additional-element__description">
+                                        Орех
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="each-additional-element">
+                                <input class="additional-element__checker" id="cherry" type="radio"
+                                       name="lamination">
+                                <label class="additional-element__label" for="cherry"></label>
+                                <div class="additional-element__container">
+                                    <div class="additional-element__picture lamination">
+                                        <i class="fas fa-check radio-checked"></i>
+                                        <div class="overlay"></div>
+                                        <img src="img/additional/lam_cherry.png" alt="Тёмная вишня">
+                                    </div>
+                                    <div class="additional-element__description">
+                                        Тёмная вишня
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="each-additional-element">
+                                <input class="additional-element__checker" id="montana" type="radio"
+                                       name="lamination">
+                                <label class="additional-element__label" for="montana"></label>
+                                <div class="additional-element__container">
+                                    <div class="additional-element__picture lamination">
+                                        <i class="fas fa-check radio-checked"></i>
+                                        <div class="overlay"></div>
+                                        <img src="img/additional/lam_montana.png" alt="Дуб монтана">
+                                    </div>
+                                    <div class="additional-element__description">
+                                        Дуб монтана
+                                    </div>
+                                </div>
                             </div>
 
                         </form>
-
-                        <div class="lamination-wrapper">
-                            <h3 class="lamination-header">Цветная ламинация</h3>
-
-                            <form action="" id="lamination" class="addons">
-
-                                <div class="each-additional-element">
-                                    <input id="none" type="radio" name="lamination" class="additional-element__checker"
-                                           checked>
-                                    <label for="none" class="additional-element">
-                                        <div class="additional-element__picture lamination">
-                                            <i class="fas fa-check radio-checked"></i>
-                                            <div class="overlay"></div>
-                                            <div class="empty"></div>
-                                        </div>
-                                        <div class="additional-element__description">
-                                            Без ламинации
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="each-additional-element">
-                                    <input id="oak" type="radio" name="lamination" class="additional-element__checker">
-                                    <label for="oak" class="additional-element">
-                                        <div class="additional-element__picture lamination">
-                                            <i class="fas fa-check radio-checked"></i>
-                                            <div class="overlay"></div>
-                                            <img src="img/additional/lam_oak.png" alt="Золотой дуб">
-                                        </div>
-                                        <div class="additional-element__description">
-                                            Золотой дуб
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="each-additional-element">
-                                    <input id="walnut" type="radio" name="lamination"
-                                           class="additional-element__checker">
-                                    <label for="walnut" class="additional-element">
-                                        <div class="additional-element__picture lamination">
-                                            <i class="fas fa-check radio-checked"></i>
-                                            <div class="overlay"></div>
-                                            <img src="img/additional/lam_walnut.png" alt="Орех">
-                                        </div>
-                                        <div class="additional-element__description">
-                                            Орех
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="each-additional-element">
-                                    <input id="cherry" type="radio" name="lamination"
-                                           class="additional-element__checker">
-                                    <label for="cherry" class="additional-element">
-                                        <div class="additional-element__picture lamination">
-                                            <i class="fas fa-check radio-checked"></i>
-                                            <div class="overlay"></div>
-                                            <img src="img/additional/lam_cherry.png" alt="Тёмная вишня">
-                                        </div>
-                                        <div class="additional-element__description">
-                                            Тёмная вишня
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="each-additional-element">
-                                    <input id="montana" type="radio" name="lamination"
-                                           class="additional-element__checker">
-                                    <label for="montana" class="additional-element">
-                                        <div class="additional-element__picture lamination">
-                                            <i class="fas fa-check radio-checked"></i>
-                                            <div class="overlay"></div>
-                                            <img src="img/additional/lam_montana.png" alt="Дуб монтана">
-                                        </div>
-                                        <div class="additional-element__description">
-                                            Дуб монтана
-                                        </div>
-                                    </label>
-                                </div>
-
-                            </form>
-
-                        </div>
-
                     </div>
+
                 </div>
                 <!--step5-->
                 <div class="calc-content tab-pane fade" id="step5" role="tabpanel"
@@ -695,8 +706,9 @@
                             <div class="hotline">
                                 <div class="hotline__name">Горячая линия</div>
                                 <div class="hotline__phone"><a
-                                        href="tel:+380675533991">067 553 39 91</a></div>
-                                <div class="hotline__callback">Перезвонить Вам?</div>
+                                        href="tel:+380675533991" class="hotline__phone">067 553 39 91</a></div>
+                                <div class="hotline__callback"><a href="#" class="hotline__callback">Перезвонить
+                                    Вам?</a></div>
                             </div>
                         </div>
 
