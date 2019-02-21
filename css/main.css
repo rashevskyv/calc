@@ -11,15 +11,11 @@
 }
 
 html, body {
-    height: fit-content;
-    font-family: "Open Sans", "Myriad Pro", sans-serif;
-}
-
-/*make footer on bottom andheader on top*/
-.content-wrapper {
+    min-height: fit-content;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    font-family: "Open Sans", "Myriad Pro", sans-serif;
+    width: 100%;
+    min-width: 1200px;
 }
 
 /*global styles*/
@@ -61,10 +57,18 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     background-blend-mode: darken;
 }
 
+/*make footer on bottom and header on top*/
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*main block*/
 .main {
     background-color: grey;
-    height: 980px;
+    min-height: 980px;
+    height: 100%;
     position: relative;
     z-index: 0;
 }
@@ -78,13 +82,15 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     bottom: 0;
     margin: auto;
     height: 855px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 /*block with content*/
 .calc {
     height: 760px;
     width: 100%;
+    min-width: 1200px;
     background-color: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
