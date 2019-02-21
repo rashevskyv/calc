@@ -16,8 +16,10 @@
 
 <div class="content-wrapper">
     <header class="header">
-        <nav class="header__nav">
 
+        <!--top navbar-->
+        <nav class="header__nav">
+            <!--links-->
             <div class="nav__wrapper">
                 <ul class="nav">
                     <li class="nav__item"><a href="#">О компании Niks-M</a></li><!--
@@ -32,6 +34,7 @@
                 </ul>
             </div>
 
+            <!--icons and lang-->
             <div class="nav-addition__wrapper">
                 <div class="nav-addition">
                     <div class="nav__icons">
@@ -47,8 +50,8 @@
                     </div>
                 </div>
             </div>
-
         </nav>
+        <!--end of top navbar-->
 
         <div class="header__bottom">
             <div class="header-bottom__wrapper">
@@ -117,6 +120,7 @@
                     <div class="calc-content__types">
                         <div class="container">
 
+                            <!--1st row-->
                             <div class="row justify-content-between">
 
                                 <div class="col">
@@ -169,15 +173,16 @@
                                             <img src="img/windows/custom.png" alt="Не стандартный тип">
                                         </div>
                                         <div class="product-type__button-container">
-                                            <button class="product-type__button" id="step2_2-tab" data-toggle="tab"
+                                            <a class="product-type__button button" id="step2_2-tab" data-toggle="tab"
                                                     href="#step2_2"
                                                     role="tab" aria-controls="home" aria-selected="true">Не стандартный
-                                                тип</a> </button>
+                                                тип</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <!--2nd row-->
                             <div class="row justify-content-between">
                                 <div class="col">
                                     <div class="product-type">
@@ -306,6 +311,7 @@
                             distinctio ducimus hic ipsam ipsum iure minima nesciunt, nihil nostrum obcaecati odit quas
                             qui quod sint velit veritatis!</p>
                     </div>
+
                     <div class="window-type-wrapper">
                         <div class="window-type">
                             <div class="window-type__picture"><img src="img/windows/each-window-type-img.png" alt="">
@@ -735,22 +741,22 @@
 
                         <div class="price-wrapper">
                             <div class="price">
-                                <div class="price__total">
-                                    <p>Кол-во:</p>
-                                    <input type="number" min="1" value="1">
+                                <div class="quantity">
+                                    <label class="quantity__label" for="price__total">Кол-во:</label>
+                                    <input class="quantity__input" type="number" min="1" value="1" id="price__total">
                                 </div>
-                                <div class="price__cost">
-                                    <div class="price__total">
+                                <div class="total-cost">
+                                    <div class="total-cost__total">
                                         <p>Стоимость:</p>
-                                        <h1><span class="value">2999</span>₴</h1>
+                                        <h2 class="total-cost__value"><span class="value">2999</span>₴</h2>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="promo">
-                                <div class="promo__shipping">
-                                    <span>бесплатная <br>доставка</span>
-                                    <img src="img/shipping.png" alt="">
+                                <div class="shipping">
+                                    <span class="shipping__label">бесплатная <br>доставка</span>
+                                    <img class="shipping__image" src="img/shipping.png" alt="">
                                 </div>
                                 <div class="promo__warranty">
                                     <span>5 лет гарантии</span>
@@ -841,9 +847,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
