@@ -11,11 +11,15 @@
 }
 
 html, body {
-    min-height: fit-content;
-    height: 100%;
+    max-height: 100%;
     font-family: "Open Sans", "Myriad Pro", sans-serif;
     width: 100%;
-    min-width: 1200px;
+    min-width: 80%;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 /*global styles*/
@@ -60,8 +64,6 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 /*make footer on bottom and header on top*/
 .content-wrapper {
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 /*main block*/
@@ -71,26 +73,23 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     height: 100%;
     position: relative;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*position of main block*/
 .main-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     margin: auto;
     height: 855px;
-    max-width: 1200px;
-    width: 100%;
+    width: 80%;
 }
 
 /*block with content*/
 .calc {
     height: 760px;
     width: 100%;
-    min-width: 1200px;
     background-color: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -101,6 +100,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 2;
+    padding: 40px;
 }
 
 .calc > * > * {
@@ -116,27 +116,31 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     box-shadow: 0 0 300px 42px rgba(255, 255, 255, 0.6);
     background-color: transparent;
     height: 760px;
-    width: 100%;
+    width: 80%;
     position: absolute;
     z-index: -1;
 }
 
 /*block with each step style an position*/
 .calc-content {
-    width: 1060px;
+    /*width: 1060px;*/
     height: 660px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: 4%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 /*description of each step*/
+.calc-content__description {
+    width: 60%
+}
+
 .calc-content__description h2 {
     font-size: 32px;
     line-height: 32px;
@@ -148,7 +152,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     font-size: 14px;
     line-height: 19px;
     margin-top: 20px;
-    width: 620px;
+    /*width: 620px;*/
     font-weight: 600;
 }
 
@@ -198,9 +202,15 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*form style*/
 .order {
-    width: 75%;
     display: flex;
     justify-content: space-between;
+    width: 82%;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+
+.order > * {
+    margin-bottom: 15px;
 }
 
 /*label in form*/
@@ -208,15 +218,28 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     font-size: 18px;
     align-self: start;
     padding-bottom: 10px;
+    padding-left: 30px
 }
 
 /*input style*/
 .order__name, .order__phone {
-    width: 280px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     border: 1px gray solid;
     padding-left: 20px;
+}
+
+.horizontal {
+    flex-wrap: nowrap;
+}
+
+.horizontal > * {
+    margin-right: 35px;
+}
+
+.horizontal > button {
+    height: 50px;
 }
 
 /*hide placeholder when focus*/
@@ -235,21 +258,16 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 /*position for window types block*/
 .window-type {
     display: flex;
-    align-items: start;
-    justify-content: start;
+    justify-content: space-between;
     width: 100%;
     height: 520px;
-    flex-direction: row;
 }
 
 /*picture of selected type*/
-.window-type__picture {
-    width: 26%;
-}
 
 /*block with all types*/
 .window-type__types {
-    width: 67%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -260,7 +278,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 .window-type__item {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /*each left row with type description*/
@@ -268,7 +286,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
+    width: 79%;
     outline: none;
     font-size: 14px;
     border-radius: 5px;
@@ -296,7 +314,6 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 }
 
 /*step3*/
-
 .step3-wrapper {
     display: flex;
     flex-direction: column;
@@ -320,6 +337,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /*flex-wrap: wrap;*/
     padding: 15px 25px;
 }
 
@@ -329,7 +347,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*style for class name*/
 .window-class__name {
-    width: 225px;
+    /*width: 225px;*/
     font-size: 24px;
     color: #ffffff;
     text-transform: uppercase;
@@ -342,7 +360,6 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     font-size: 14px;
     color: #ffffff;
     padding: 15px;
-    width: 130px;
     word-wrap: normal;
 }
 
@@ -388,6 +405,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    /*flex-wrap: wrap;*/
 }
 
 /*step4*/
@@ -401,6 +419,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     height: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*hide input*/
@@ -536,6 +555,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     display: flex;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*align of hotline block*/
@@ -654,6 +674,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 .price-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*align for elements in price block*/
@@ -661,6 +682,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     display: flex;
     align-items: start;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*block with total cost and quantity*/
@@ -779,23 +801,9 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*styles for second subblock*/
 .checkout-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     height: 100%;
 }
 
-.checkout {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 95%;
-}
-
-.checkout-wrapper > h3 {
-    padding-left: 35px
-}
 
 /*styles for last subblock*/
 .final-menu {

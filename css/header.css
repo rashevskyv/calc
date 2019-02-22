@@ -17,13 +17,6 @@
 }
 
 /*navmenu size and position*/
-.nav__wrapper {
-    /*width: 45vw;*/
-    /*margin: 0.7vh auto 0.8vh auto;*/
-    min-width: 550px;
-    width: 590px;
-    position: absolute;
-}
 
 /*style for each item on navmenu*/
 .nav__item, .sociallink_item {
@@ -47,11 +40,10 @@
 /*position of lang and search elements in navbar*/
 .nav-addition__wrapper {
     position: relative;
-    left: 380px;
+    /*left: 380px;*/
 }
 
 .nav-addition {
-    width: 140px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -59,13 +51,11 @@
 
 /*styles for profile and search*/
 .nav__icons {
-    min-width: 40px;
-    /*width: 3.5vw;*/
-    /*font-size: 1.35vh;*/
     width: 65px;
     font-size: 18px;
     display: inline-flex;
     justify-content: space-between;
+    margin: 0 1em;
 }
 
 /*paddings for lang items*/
@@ -85,18 +75,20 @@
 /*posotion of bottom part of header*/
 .header-bottom__wrapper {
     height: 100%;
+    width: 60%;
     display: inline-flex;
     align-items: center;
 }
 
 /*style of bottom part of header*/
 .header-bottom {
+    width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     height: 65px;
-    width: 900px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 /*Block with callback information*/
@@ -104,7 +96,7 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 510px;
+    width: 60%;
     height: 100%;
 }
 

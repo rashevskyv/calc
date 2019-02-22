@@ -1,7 +1,7 @@
 /*footer block*/
 .footer {
     /*height: 9vh;*/
-    width: 100%;
+    /*width: 100%;*/
     height: 110px;
     background-color: #6f6f6f;
     border-top: 18px #ef9400 solid;
@@ -12,36 +12,27 @@
 }
 
 .footer-wrapper {
-    width: 1200px;
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
-.footer__copyright {
-    width: 50%;
-    display: inline-flex;
-    justify-content: center;
-}
-
-.footer-left-wrapper {
-    width: 350px;
+.footer__block {
     display: inline-flex;
     justify-content: space-between;
     margin-top: 17px;
-    float: right;
+    width: 30%;
+    flex-wrap: wrap;
 }
 
 .copy > p {
     margin: 0;
 }
 
-.footer__social {
-    width: 50%;
-    float: right;
-}
-
 .footer-right-wrapper {
-    width: 350px;
+    /*width: 350px;*/
     display: inline-flex;
     align-items: start;
     justify-content: space-between;
@@ -60,38 +51,6 @@
     border-left: none;
     border-right: 1px white solid;
     padding: 0 15px;
-}
-
-.footer-webstudio-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 330px;
-    height: 35px;
-    padding: 0 25px;
-    position: absolute;
-}
-
-.footer__web-studio {
-    width: 350px;
-    height: 35px;
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-    border-radius: 10px 30px 0 0;
-    overflow: hidden;
-    background-color: #f79500;
-}
-
-.footer__web-studio::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 10px;
-    width: 40px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #8c6f44;
 }
 
 .send-message {
