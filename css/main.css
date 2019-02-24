@@ -69,8 +69,8 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 /*main block*/
 .main {
     background-color: grey;
-    min-height: 980px;
     height: 100%;
+    padding: 50px 0;
     position: relative;
     z-index: 0;
     display: flex;
@@ -83,13 +83,13 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 .main-wrapper {
     margin: auto;
     height: 855px;
-    width: 80%;
+    width: 1200px;
 }
 
 /*block with content*/
 .calc {
     height: 760px;
-    width: 100%;
+    max-width: 1200px;
     background-color: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -116,7 +116,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     box-shadow: 0 0 300px 42px rgba(255, 255, 255, 0.6);
     background-color: transparent;
     height: 760px;
-    width: 80%;
+    width: 1200px;
     position: absolute;
     z-index: -1;
 }
@@ -154,6 +154,10 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     margin-top: 20px;
     /*width: 620px;*/
     font-weight: 600;
+}
+
+.calc-content__input {
+    height: 95px;
 }
 
 /*step1*/
@@ -255,19 +259,28 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*step2*/
 
-/*position for window types block*/
-.window-type {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 520px;
+/*block with all types*/
+.window-type-wrapper {
+    display: grid;
+    grid-template-columns: 1.01fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "name name name name ." "window types types types types" "window types types types types" "window types types types types";
 }
 
-/*picture of selected type*/
+.calc-content__description {
+    grid-area: name;
+}
 
-/*block with all types*/
+.window-type__picture {
+    grid-area: window;
+}
+
 .window-type__types {
-    width: 75%;
+    grid-area: types;
+}
+
+.window-type__types {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -276,9 +289,10 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*each row*/
 .window-type__item {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    grid-template-rows: 45px;
+    margin-bottom: 0.4em;
 }
 
 /*each left row with type description*/
@@ -286,13 +300,13 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 79%;
     outline: none;
     font-size: 14px;
     border-radius: 5px;
     border: none;
     color: white;
     background-color: #ef9400;
+    margin-right: 0.4em;
 }
 
 /*highlite type on button hover*/
@@ -304,6 +318,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 .each-window-type__button {
     padding-top: 12px;
     padding-bottom: 12px;
+    order: 1;
 }
 
 /*modification of font style for size of type*/
@@ -313,11 +328,17 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     letter-spacing: 1px;
 }
 
+.each-window-type__size:after {
+    content: ' мм';
+}
+
+
 /*step3*/
 .step3-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    height: 100%;
 }
 
 /*align of each windows class*/
@@ -327,6 +348,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 }
 
 /*style for each class block*/
+
 .window-class__header {
     height: 140px;
     background-color: #ef9400;
@@ -334,24 +356,77 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     -moz-border-radius: 5px;
     border-radius: 5px !important;
     margin-bottom: 17px;
-    display: flex;
+    padding: 10px 25px;
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 135px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "mod_name mod_parts mod_parts mod_button";
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
-    /*flex-wrap: wrap;*/
-    padding: 15px 25px;
+
 }
 
+.window-class__name {
+    grid-area: mod_name;
+}
+
+.window-class__parts {
+    display: grid;
+    grid-template-columns: repeat(2, 115px 125px) 40px 125px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img1 p1 img2 p2 img3 p3";
+    grid-area: mod_parts;
+    justify-items: center;
+    align-items: center;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.mod_button {
+    grid-area: mod_button;
+}
+
+.window-class {
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*align for blocks with parts*/
 .window-class__type {
     border: 0;
 }
 
 /*style for class name*/
 .window-class__name {
-    /*width: 225px;*/
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
+    justify-self: self-start;
 }
 
 /*p with description in each class block*/
@@ -365,12 +440,15 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*bottons*/
 .windows-class__button {
+    height: 50px;
+    width: 125px;
     color: #ef9400;
     background-color: #fff;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 18px;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 0;
 }
 
 .windows-class__button:hover, .windows-class__button:focus, .windows-class__button:active {
@@ -399,27 +477,21 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     margin-top: -15px !important;
 }
 
-/*align for blocks with parts*/
-.window-class__parts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-}
-
 /*step4*/
-.additional-element-wrapper {
-    height: 45%;
-}
-
 /*form style and align elements inside it*/
 .addons {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.4em;
+}
+
+.additional-element-wrapper {
+    margin-bottom: 40px;
+}
+
+.each-additional-element {
+    height: 220px;
 }
 
 /*hide input*/
@@ -473,7 +545,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*wrapper for block with lamination types*/
 .lamination-wrapper {
-    height: 35%;
+    height: fit-content;
     width: 100%;
 }
 
@@ -803,7 +875,6 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 .checkout-wrapper {
     height: 100%;
 }
-
 
 /*styles for last subblock*/
 .final-menu {

@@ -1,0 +1,337 @@
+/*header*/
+@media screen and (max-width: 1240px) {
+    .header-bottom__wrapper {
+        width: 90%;
+    }
+
+    .main-wrapper {
+        width: 95% !important;
+    }
+
+    .call-us {
+        width: 475px!important;
+    }
+
+
+    .footer__block {
+        width: 45% !important;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .navtabs-wrapper {
+        width: 93% !important;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .header {
+        height: 125px;
+    }
+
+    .header__bottom {
+        height: 75px;
+    }
+
+    .header-bottom__wrapper {
+        width: 100%;
+    }
+
+    .header-bottom {
+        justify-content: space-around;
+    }
+
+    .navtabs-wrapper {
+        width: 100%!important;
+
+    }
+
+    .navtabs__link {
+        border: 0!important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navtabs__link:before {
+        content: none;
+    }
+
+    .navtabs__link:after {
+        content: none;
+    }
+
+    .navbutton__link {
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+
+    .navtabs__link.active, .navtabs__link.active::after, .navtabs__link.active::before {
+        z-index: -2!important;
+    }
+
+    .main-wrapper {
+        width: 100% !important;
+    }
+
+    .main {
+        display: block!important;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .calc__shadowbox {display: none;}
+
+    .calc {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        border: none!important;
+    }
+
+    .call-us {
+        width: 60%!important;
+    }
+}
+
+/*main*/
+
+@media screen and (max-width: 1090px) {
+    .calc {        width: 100%;    }
+    .main-wrapper {width: 80%}
+    .calc__shadowbox {width: 80%}
+
+    .window-class__name {
+        font-size: 20px!important;
+    }
+
+    .window-class__parts > * {
+        font-size: 16px!important;
+    }
+
+    .product-type {
+        zoom: 0.9;
+    }
+
+    .each-window-type__description {
+        font-size: 18px;
+    }
+
+    .calc-content__description {
+        width: 100%;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 60%;
+    }
+
+    .each-window-type__button {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+    }
+
+    .window-type-wrapper {
+        grid-template-columns: 1.01fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 6fr;
+        grid-template-areas: "name name name window " "types types types types ";
+        height: 72vh;
+    }
+
+    .window-type__types {
+        height: 90%;
+    }
+
+    .window-class__header {
+        grid-template-columns: 145px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .window-class__name {justify-self: center}
+
+    .window-class__parts {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .each-additional-element {zoom: 0.98;}
+
+    .window-type-wrapper {height: 65vh}
+
+    .window-type__picture {
+        zoom: 0.8;
+        position: absolute;
+        right: 0;
+    }
+
+    .calc-content {justify-content: space-around}
+
+    .calc-content__description {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main-wrapper {
+        margin: auto;
+        width: auto;
+        height: 80.5vh;
+    }
+
+    .calc {height: 71vh;}
+
+    .calc-content {
+        height: auto;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 60%;
+    }
+
+    .step5-head-wrapper  {
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .calc-content__description {padding: 0}
+
+    .total-overview {
+        flex-wrap: nowrap
+    }
+
+    .final-menu > button {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 880px){
+
+    #step2 > .calc-content__description {
+        width: 60%;
+    }
+
+    .main-wrapper {
+        margin: auto;
+        width: auto;
+        height: 110.5vh;
+    }
+
+    .calc {height: 100vh;}
+
+    .calc-content {
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .lamination-wrapper > .addons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0.4em;
+    }
+
+    .additional-element__picture {
+        height: 78px;
+    }
+
+    .each-additional-element {
+        height: 145px;
+    }
+
+    .addons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0.4em;
+    }
+
+    .window-class {
+        justify-content: flex-start;
+    }
+
+    .window-class__body {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .window-class__header {
+        grid-template-columns: 145px 1fr;
+        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .window-class__parts {
+        grid-template-rows: 1fr 1px;
+        grid-template-areas: "img1 img2 img3" "p1 p2 p3 ";
+    }
+
+    .each-window-type__size:after {
+        content: none;
+    }
+
+    .calc-content__description p {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+
+    .calc-content__types {
+        height: 100%;
+    }
+
+    .window-type-wrapper {
+        height: 76vh;
+    }
+
+    .footer-wrapper {width: 100%}
+
+    .window-class__parts > img {
+        display: none;
+    }
+
+    .window-class__parts > p {
+        height: 145px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 54%;
+        font-size: 12px;
+    }
+
+    .step5-head-wrapper {
+        padding-bottom: 0;
+    }
+
+    .step5-bottom-wrapper {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .calc-content {
+        height: auto;
+    }
+
+    .calc {height: 72vh;}
+
+
+}

@@ -91,16 +91,18 @@
     flex-wrap: wrap;
 }
 
+
 /*Block with callback information*/
 .call-us {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 60%;
+    max-width: 525px;
     height: 100%;
 }
 
-.call-us__icon > img{
+.call-us__icon > img {
     width: 39px;
     height: 45px;
 }
