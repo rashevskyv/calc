@@ -52,6 +52,7 @@ button, .button {
     color: white;
     background-color: #ef9400;
     text-align: center;
+    text-decoration: none!important;
 }
 
 button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {
@@ -132,7 +133,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     bottom: 0;
     margin: 4%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -696,7 +697,8 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*block for total text description*/
 .total-overview {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     height: 100%;
 }
 
@@ -799,9 +801,11 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 /*align for items inside promo*/
 .promo {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
+    width: 38%;
 }
 
 /*align for items inside shipping*/
@@ -832,13 +836,11 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 /*align and size for bottom block */
 .step5-bottom-wrapper {
     height: 250px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*width for each subblock*/
-.step5-bottom-wrapper > div {
-    width: calc(100% / 3);
-}
 
 /*border right for each subblock, except last*/
 .step5-bottom-wrapper > div:not(:last-child) {
