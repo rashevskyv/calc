@@ -1,33 +1,227 @@
-/*header*/
-@media screen and (max-width: 1240px) {
-    .header-bottom__wrapper {
-        width: 90%;
-    }
-
-    .main-wrapper {
-        width: 95% !important;
-    }
-
-    .call-us {
-        width: 475px!important;
-    }
-
-
-    .footer__block {
-        width: 45% !important;
-    }
-}
 
 @media screen and (max-width: 1090px) {
-    .navtabs-wrapper {
-        width: 93% !important;
+
+    .window-class__name {
+        font-size: 20px!important;
     }
 
+    .window-class__parts > * {
+        font-size: 16px!important;
+    }
 
+    .product-type {
+        zoom: 0.9;
+    }
+
+    .each-window-type__description {
+        font-size: 18px;
+    }
+
+    .calc-content__description {
+        width: 100%;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 60%;
+    }
+
+    .each-window-type__button {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+    }
+
+    .window-type-wrapper {
+        grid-template-columns: 1.01fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 6fr;
+        grid-template-areas: "name name name window " "types types types types ";
+        height: 72vh;
+    }
+
+    .window-type__picture {
+        zoom: 0.8;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    .window-type__types {
+        height: 90%;
+    }
+
+    .window-class__header {
+        grid-template-columns: 145px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .window-class__name {justify-self: center}
+
+    .window-class__parts {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .total-overal__image > img {
+        max-height: 115px;
+    }
+
+    .step5-head-wrapper {
+        flex-wrap: nowrap!important;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        grid-template-columns: 100%;
+    }
+
+    .calc-content__description p {
+        margin-top: 10px;
+    }
+
+    .calc-content__types {
+        height: 45%;
+    }
+
+    .calc-content {
+        justify-content: flex-start;
+    }
 }
 
 
 @media screen and (max-width: 990px) {
+
+    .navtabs-wrapper {
+        width: 92%;}
+
+    .each-additional-element {zoom: 0.95;}
+
+    .header {
+    height: 125px;
+    }
+
+    .header__bottom {
+    height: 75px;
+    }
+
+    .header-bottom__wrapper {
+    width: 100%;
+    }
+
+    .header-bottom {
+    justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 880px){
+
+    #step2 > .calc-content__description {
+        width: 60%;
+    }
+
+    .main-wrapper {
+        margin: auto;
+        width: auto;
+    }
+
+    .calc-content {
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .window-class {
+        justify-content: flex-start;
+    }
+
+    .window-class__body {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .window-class__header {
+        grid-template-columns: 145px 1fr;
+        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .window-class__parts {
+        grid-template-rows: 1fr 75px;
+        grid-template-areas: "img1 img2 img3" "p1 p2 p3 ";
+    }
+
+    .window-type__item {
+        margin-bottom: 0.4em;
+    }
+
+    .each-window-type__size:after {
+        content: none;
+    }
+
+    .calc-content__description p {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+
+    .calc-content__types {
+        height: 100%;
+    }
+
+    .window-type-wrapper {
+        height: 76vh;
+    }
+
+    .window-type__picture {
+        zoom: 0.8;
+    }
+
+    .footer-wrapper {width: 100%}
+
+    .window-class__parts > p {
+        height: 145px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 14px!important;
+    }
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 54%;
+        font-size: 12px;
+    }
+
+    .step5-head-wrapper {
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .calc-content {
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .calc-content__types {
+        height: 50%;
+    }
+
+    #step5 {justify-content: space-evenly}
+
+    .product-type {
+        zoom: 1;}
+
+    .promo {
+        width: 50%;
+    }
 
     .header {
         height: 125px;
@@ -99,323 +293,353 @@
     }
 }
 
-/*main*/
-
-@media screen and (max-width: 1090px) {
-    .calc {        width: 100%;    }
-    .main-wrapper {width: 80%}
-    .calc__shadowbox {width: 80%}
-
-    .window-class__name {
-        font-size: 20px!important;
-    }
-
-    .window-class__parts > * {
-        font-size: 16px!important;
-    }
-
-    .product-type {
-        zoom: 0.9;
-    }
-
-    .each-window-type__description {
-        font-size: 18px;
-    }
-
-    .calc-content__description {
-        width: 100%;
-    }
-
-    .step5-head-wrapper > .calc-content__description {
-        width: 60%;
-    }
-
-    .each-window-type__button {
-        font-size: 20px;
-        font-weight: 800;
-        text-transform: uppercase;
-        padding: 0;
-        text-align: center;
-    }
-
-    .window-type-wrapper {
-        grid-template-columns: 1.01fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 6fr;
-        grid-template-areas: "name name name window " "types types types types ";
-        height: 72vh;
-    }
-
-    .window-type__picture {
-        zoom: 0.8;
-        margin-bottom: 20px;
-        margin-left: 15px;
-    }
-
-    .window-type__types {
-        height: 90%;
-    }
-
-    .window-class__header {
-        grid-template-columns: 145px 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
-        justify-items: center;
-        align-items: center;
-    }
-
-    .window-class__name {justify-self: center}
-
-    .window-class__parts {
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    .total-overview {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .total-overal__image > img {
-        max-height: 115px;
-    }
-
-    .total-overal {
-        height: 150px;
-    }
-
-    .calc-content__description p {
-        margin-top: 10px;
-    }
-
-    .calc-content__types {
-        height: 45%;
-    }
-
-    .calc-content {
-        justify-content: flex-start;
-    }
-}
-
-
-@media screen and (max-width: 990px) {
-
-    .each-additional-element {zoom: 0.98;}
-
-    .window-type-wrapper {height: 65vh}
-
-    .window-type__picture {
-        zoom: 0.6;
-        position: absolute;
-        right: 0;
-    }
-
-    .calc-content {justify-content: space-around}
-
-    .calc-content__description {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .main-wrapper {
-        margin: auto;
-        width: auto;
-        height: 91.3vh;
-    }
-
-    .calc {height: 81vh;}
-
-    .calc-content {
-        height: auto;
-    }
-
-    .step5-head-wrapper > .calc-content__description {
-        width: 60%;
-    }
-
-    .step5-head-wrapper  {
-        padding-bottom: 30px;
-        display: flex;
-        align-items: center;
-    }
-
-    .calc-content__description {padding: 0}
-
-    .total-overview {
-        flex-wrap: nowrap
-    }
-
-    .final-menu > button {
-        padding: 10px 5px;
-    }
-
-    .promo {
-        width: 43%;
-    }
-
-    .calc-content {
-        height: auto;
-        justify-content: flex-start;
-    }
-
-    .calc-content__types {
-        height: 35%;
-    }
-
-}
-
-@media screen and (max-width: 880px){
-
-    #step2 > .calc-content__description {
-        width: 60%;
-    }
-
-    .main-wrapper {
-        margin: auto;
-        width: auto;
-        height: 112vh;
-    }
-
-    .calc {height: 102vh;}
-
-    .calc-content {
-        height: auto;
-        justify-content: space-between;
-    }
-
-    .lamination-wrapper > .addons {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 0.4em;
-    }
-
-    .additional-element__picture {
-        height: 78px;
-    }
-
-    .each-additional-element {
-        height: 145px;
-    }
-
-    .addons {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 0.4em;
-    }
-
-    .window-class {
-        justify-content: flex-start;
-    }
-
-    .window-class__body {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    .window-class__header {
-        grid-template-columns: 145px 1fr;
-        grid-template-rows: 0.8fr 1.2fr;
-        grid-template-areas: "mod_name mod_parts" "mod_button mod_parts";
-        justify-items: center;
-        align-items: center;
-    }
-
-    .window-class__parts {
-        grid-template-rows: 1fr 1px;
-        grid-template-areas: "img1 img2 img3" "p1 p2 p3 ";
-    }
-
-    .each-window-type__size:after {
-        content: none;
-    }
-
-    .calc-content__description p {
-        font-size: 17px;
-        line-height: 25px;
-        font-weight: 400;
-    }
-
-    .calc-content__types {
-        height: 100%;
-    }
-
-    .window-type-wrapper {
-        height: 76vh;
-    }
-
-    .window-type__picture {
-        zoom: 0.8;
-    }
-
-    .footer-wrapper {width: 100%}
-
-    .window-class__parts > img {
-        display: none;
-    }
-
-    .window-class__parts > p {
-        height: 145px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .step5-head-wrapper > .calc-content__description {
-        width: 54%;
-        font-size: 12px;
-    }
-
-    .step5-head-wrapper {
-        padding-bottom: 0;
-    }
-
-    .step5-bottom-wrapper {
-        height: 280px;
-    }
-
-    .total {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 290px;
-    }
-
-    .calc-content {
-        height: auto;
-        justify-content: flex-start;
-    }
-
-    .calc-content__types {
-        height: 50%;
-    }
-
-    #step5 {justify-content: space-evenly}
-
-    .product-type {
-        zoom: 1;}
-
-    .total-overal {
-        height: 230px;
-    }
-
-    .promo {
-        width: 50%;}
-
-}
-
 @media screen and (max-width: 750px){
     .calc-content__types {
         height: 65%;
     }
 
+    .step5-head-wrapper {
+        flex-wrap: wrap!important;
+
+    }
+
+    .each-window-type__description {
+        font-size: 17px;
+    }
+
+    .header__nav {
+        display: none;
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-columns: 0.9fr;
+        position: fixed;
+        height: auto;
+        width: 100vw;
+        z-index: 100;
+        font-size: 18px;
+    }
+
+    .header__bottom {
+        height: auto!important;
+    }
+
+    .nav-addition__wrapper {
+        order: 0;
+        justify-self: flex-start;
+    }
+
+    .nav-addition > * {
+        font-size: inherit;
+    }
+
+
+    .nav-menu-wrapper, .nav {
+        order: 1;
+        display: block;
+        height: 93%;
+    }
+
+    .nav-menu-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .nav-menu-wrapper .nav__item {
+        display: block;
+        border: 0;
+        padding: 15px;
+        height: fit-content;
+    }
+
+    .nav__item {
+        font-size: inherit;
+    }
+
+    .nav__icons {
+        width: 70px;
+    }
+
+    .call-us {
+        display: none;
+    }
+
+
+    #hide-menu:target {
+        display: grid;
+    }
+
+    #hide-menu {
+        display: none;
+    }
+
+    .access_aid {display: inline-block}
+
+
+    .navtabs__link::before {
+        content:'';
+    }
+
+    .navtabs__link::after {
+        content:'';
+    }
+
+    .navtabs__link.active, .navtabs__link.active::after, .navtabs__link.active::before {
+        z-index: 3!important;
+    }
+
+    .navtabs-wrapper > .nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navtabs__item {
+        min-width: 50vw;
+    }
+
+    .navtab__link-text {
+        font-size: 15px;
+    }
+
+    .navtabs {
+        overflow: hidden!important;
+    }
+
+    .content-wrapper {
+        display: grid;
+        grid-template-rows: 17vh 100% 160px;
+        grid-template-columns: 100vw;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .calc {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 160px;
+    }
+
+    .footer-wrapper {
+        justify-content: center;
+        padding: 0 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer__block {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__block > .logo {
+        justify-self: flex-end;
+        align-self: center;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .sociallink {
+        height: fit-content;
+    }
+
+    .callback > span {
+        display: none;
+    }
+
+    .calc-content__description {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-buttons > .navtabs {
+        width: 100vw!important;
+        position: relative;
+    }
+
+    .bottom-buttons > .navtabs > .navtabs__item > a:before {
+        content: none!important;
+    }
+    .bottom-buttons > .navtabs > .navtabs__item > a:after {
+        content: none!important;
+    }
+    .bottom-buttons > .navtabs > .navtabs__item:last-child > a {
+        float: right;
+    }
+
+    /*step2*/
+
+    .window-type-wrapper {
+        height: auto!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "name " "window" "types";
+    }
+
+    .window-type__picture {
+        position: relative;
+        justify-self: center;
+    }
+
+    .window-type__item {
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: fit-content(100%);
+    }
+
+    .each-window-type {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /*step4*/
+    .each-additional-element {
+        height: 220px;
+    }
+
+    .additional-element__picture {
+        height: 155px;
+    }
+
+    .lamination {
+        height: 78px;
+    }
+
+    #lamination > .each-additional-element {
+        height: 155px;
+    }
+
+    /*step5*/
+
+    .step5-head-wrapper > .calc-content__description {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .step5-head-wrapper {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .total-overal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .total-overview {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .total-overview p {
+        margin: 0;
+    }
+
+    .total-overview__col {
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+
+    .total-overal__image {
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+
+    .price-wrapper {
+        justify-content: center;
+    }
+
+    .promo {width: 100%}
+
+    .step5-bottom-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.2fr 0.6fr;
+    }
+
+    .step5-bottom-wrapper > div:not(:last-child) {
+        border-bottom: 1px #ef9400 solid;
+        border-right: 0;
+    }
+
+    .step5-bottom-wrapper > div {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .iq-energy__description {text-align: center}
+
+
+}
+
+@media screen and (max-width: 600px){
+    /*step3*/
+    .window-class__header {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100vw;
+        position: relative;
+        left: -20px;
+        border-radius: 0!important;
+    }
+
+    .window-class__parts {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "img1 p1" "img2 p2" "img3 p3";
+    }
+
+    .window-class__parts > p {
+        text-align: left;
+        font-size: 17px!important;
+    }
+
+    .window-class__name, .windows-class__button {
+        margin: 15px;
+    }
+
+    .accordion > .card {overflow: unset}
 }
 
 
+@media screen and (max-width: 373px){
 
-@media screen and (max-width: 720px){
-    .calc-content {height: auto;}
+    .calc-content__description h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .footer__block:first-child {
+        width: 72%!important;
+    }
 
-    .calc {height: 72vh;}
+    .footer__block:last-child {
+        width: 28%!important;
+    }
 
+    .sociallink {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+
+    .sociallink_item {
+        border: none;
+    }
+
+    .promo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .promo > * {
+        margin: 0;
+    }
 }
-

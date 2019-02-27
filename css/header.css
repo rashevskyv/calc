@@ -21,20 +21,17 @@
 /*style for each item on navmenu*/
 .nav__item, .sociallink_item {
     height: 20px;
-    /*height: 1.4vh;*/
     list-style-type: none;
-    border-left: 1px white solid;
     padding: 5px 12px;
-    /*padding: 0.28vh 12px;*/
     display: inline-flex;
     align-items: center;
     font-size: 14px;
-    /*font-size: 1.25vh;*/
 }
 
 /*disable left border on navmenu*/
-.nav__item:first-child {
-    border-left: 0;
+.nav__item:not(:last-child) {
+    border-right: 1px white solid;
+
 }
 
 /*position of lang and search elements in navbar*/
@@ -75,7 +72,7 @@
 /*posotion of bottom part of header*/
 .header-bottom__wrapper {
     height: 100%;
-    width: 60%;
+    width: 66%;
     display: inline-flex;
     align-items: center;
 }
@@ -91,13 +88,16 @@
     flex-wrap: wrap;
 }
 
+.logo {
+    display: inline-block;
+}
 
 /*Block with callback information*/
 .call-us {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    min-width: 453px;
     max-width: 525px;
     height: 100%;
 }
@@ -116,5 +116,26 @@
 
 .phone-number > img {
     margin-right: 10px;
+}
+
+.access_aid {
+    overflow: hidden;
+    font-size: 25px;
+    display: none;
+}
+
+#access_nav {
+    position: relative;
+    top: 13px;
+    left: 13px;
+    color: #7f7f7f;
+    margin: auto;
+}
+
+#access_top {
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 

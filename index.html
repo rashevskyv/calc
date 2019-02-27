@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>NIKS-m - окна и двери</title>
 </head>
 <body>
 
 <div class="content-wrapper">
-    <header class="header">
+    <!--top navbar-->
 
-        <!--top navbar-->
-        <nav class="header__nav">
-            <!--links-->
+    <nav class="header__nav" id="hide-menu">
+        <!--links-->
+        <div class="nav-menu-wrapper">
+            <a href="#body" id="access_top" class="access_aid"><i class="fas fa-times-circle"></i></a>
             <ul class="nav">
                 <li class="nav__item"><a href="#">О компании Niks-M</a></li><!--
                     -->
@@ -35,43 +36,48 @@
                 <li class="nav__item"><a href="#">Контакты</a></li>
             </ul>
 
-            <!--icons and lang-->
-            <div class="nav-addition__wrapper">
-                <div class="nav-addition">
-                    <div class="nav__icons">
-                        <a href="#"><i class="far fa-user"></i></a>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </div>
-                    <div class="nav__lang">
-                        <ul class="nav">
-                            <li class="nav__item"><a href="#">ua</a></li><!--
+        </div>
+
+
+        <!--icons and lang-->
+        <div class="nav-addition__wrapper">
+            <div class="nav-addition">
+                <div class="nav__icons">
+                    <a href="#"><i class="far fa-user"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="nav__lang">
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#">ua</a></li><!--
                     -->
-                            <li class="nav__item"><a href="#">ru</a></li>
-                        </ul>
-                    </div>
+                        <li class="nav__item"><a href="#">ru</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-        <!--end of top navbar-->
+        </div>
+    </nav>
+    <!--end of top navbar-->
 
-        <div class="header__bottom">
-            <div class="header-bottom__wrapper">
-                <div class="header-bottom">
-                    <div class="logo"><img src="img/logo.png" alt="NIKS-m logo"></div>
-                    <div class="call-us">
-                        <div class="call-us__phone-number"><span class="phone-number"><img src="img/ks.png"
-                                                                                           alt="Киевстар"><a
-                                href="tel:+380675533991">067 553 39 91</a></span>
-                        </div>
-                        <div class="call-us__icon"><img src="img/support_icon.png" alt=""></div>
-                        <div class="call-us__button">
-                            <button type="button" class="call-us__button">Перезвонить Вам?</button>
-                        </div>
+    <div class="header__bottom">
+
+        <div class="header-bottom__wrapper">
+            <div class="header-bottom">
+                <div class="logo">
+                    <img src="img/logo.png" alt="NIKS-m logo"><a href="#hide-menu" id="access_nav" class="access_aid"><i class="fas fa-chevron-circle-down"></i></a>
+                </div>
+                <div class="call-us">
+                    <div class="call-us__phone-number"><span class="phone-number"><img src="img/ks.png"
+                                                                                       alt="Киевстар"><a
+                            href="tel:+380675533991">067 553 39 91</a></span>
+                    </div>
+                    <div class="call-us__icon"><img src="img/support_icon.png" alt=""></div>
+                    <div class="call-us__button">
+                        <button type="button" class="call-us__button">Перезвонить Вам?</button>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="main">
         <div class="main-wrapper">
@@ -106,8 +112,8 @@
             </div>
             <!--end of navigation tabs-->
 
-            <div class="calc__shadowbox"></div>
             <div class="calc">
+                <div class="calc__shadowbox"></div>
                 <!--step1-->
                 <div class="calc-content tab-pane fade" id="step1" role="tabpanel"
                      aria-labelledby="step1-tab">
@@ -118,10 +124,8 @@
                             qui quod sint velit veritatis!</p>
                     </div>
 
-                    <div class="calc-content__types">
-                        <div class="row justify-content-between">
-
-                            <div class="col">
+                    <div class="calc-content__types row justify-content-between">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/2-parts.png" alt="2-частное окно">
@@ -132,7 +136,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/3-parts.png" alt="3-частное окно">
@@ -143,7 +147,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/balcony_block_1.png" alt="Балконный блок">
@@ -154,7 +158,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/balcony_block_2.png" alt="Балконный блок">
@@ -165,7 +169,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/custom.png" alt="Не стандартный тип">
@@ -179,7 +183,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/loggia.png" alt="2-частное окно"
@@ -191,7 +195,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/balcony.png" alt="2-частное окно">
@@ -202,7 +206,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/balcony_2.png" alt="2-частное окно">
@@ -212,7 +216,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!--step2.2-->
@@ -237,7 +240,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/circle.png" alt="Круглое окно">
@@ -248,7 +251,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/trapezoid.png" alt="Трапецевидное окно">
@@ -259,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/triangle.png" alt="Треугольное окно">
@@ -270,7 +273,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <div class="product-type">
                                     <div class="product-type__img">
                                         <img src="img/windows/ark.png" alt="Арочное окно">
@@ -295,7 +298,7 @@
                     </div>
                 </div>
                 <!--step2-->
-                <div class="calc-content tab-pane fade" id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                <div class="calc-content tab-pane fade show active" id="step2" role="tabpanel" aria-labelledby="step2-tab">
                     <div class="window-type-wrapper">
 
                         <div class="calc-content__description">
@@ -424,11 +427,14 @@
                                      data-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="window-class__name">Эконом</div>
                                     <div class="window-class__parts">
-                                        <img class="img1" src="img/windows-class/glass_econom.png" alt="Однокамерный стеклопакет">
+                                        <img class="img1" src="img/windows-class/glass_econom.png"
+                                             alt="Однокамерный стеклопакет">
                                         <p class="p1">Однокамерный стеклопакет</p>
-                                        <img class="img2" src="img/windows-class/profile_econom.png" alt="Профиль WDS 400">
+                                        <img class="img2" src="img/windows-class/profile_econom.png"
+                                             alt="Профиль WDS 400">
                                         <p class="p2">Профиль WDS 400</p>
-                                        <img class="img3" src="img/windows-class/furniture_econom.png" alt="Фурнитура Axor">
+                                        <img class="img3" src="img/windows-class/furniture_econom.png"
+                                             alt="Фурнитура Axor">
                                         <p class="p3">Фурнитура Axor</p>
                                     </div>
                                     <button class="windows-class__button">Выбрать</button>
@@ -451,11 +457,14 @@
                                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="window-class__name">Оптимальное</div>
                                     <div class="window-class__parts">
-                                        <img class="img1" src="img/windows-class/glass_optimal.png" alt="Двухкамерный стеклопакет">
+                                        <img class="img1" src="img/windows-class/glass_optimal.png"
+                                             alt="Двухкамерный стеклопакет">
                                         <p class="p1">Двухкамерный стеклопакет</p>
-                                        <img class="img2" src="img/windows-class/profile_optimal.png" alt="Профиль WDS 5 серии">
+                                        <img class="img2" src="img/windows-class/profile_optimal.png"
+                                             alt="Профиль WDS 5 серии">
                                         <p class="p2">Профиль WDS 5 серии</p>
-                                        <img class="img3" src="img/windows-class/furniture_optimal.png" alt="Фурнитура Австрия MACO">
+                                        <img class="img3" src="img/windows-class/furniture_optimal.png"
+                                             alt="Фурнитура Австрия MACO">
                                         <p class="p3">Фурнитура Австрия MACO</p>
                                     </div>
                                     <button class="windows-class__button">Выбрать</button>
@@ -480,9 +489,11 @@
                                         <img class="img1" src="img/windows-class/glass_ultra.png"
                                              alt="Мультифункциональный двухкамерный стеклопакет">
                                         <p class="p1">Мультифунк-<br>циональный двухкамерный стеклопакет</p>
-                                        <img class="img2" src="img/windows-class/profile_ultra.png" alt="Профиль WDS 7 серии">
+                                        <img class="img2" src="img/windows-class/profile_ultra.png"
+                                             alt="Профиль WDS 7 серии">
                                         <p class="p2">Профиль WDS 7 серии</p>
-                                        <img class="img3" src="img/windows-class/furniture_ultra.png" alt="Фурнитура Австрия MACO">
+                                        <img class="img3" src="img/windows-class/furniture_ultra.png"
+                                             alt="Фурнитура Австрия MACO">
                                         <p class="p3">Фурнитура Австрия MACO</p>
                                     </div>
                                     <button class="windows-class__button">Выбрать</button>
@@ -515,8 +526,8 @@
                     </div>
 
                     <div class="additional-element-wrapper">
-                        <form class="addons" action="" id="additional-element">
-                            <div class="each-additional-element">
+                        <form class="addons row" action="" id="additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="mount" type="checkbox"
                                        name="additional-element">
                                 <label class="additional-element__label" for="mount"></label>
@@ -532,7 +543,7 @@
 
                                 </div>
                             </div>
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="mosq_cell" type="checkbox"
                                        name="additional-element">
                                 <label class="additional-element__label" for="mosq_cell"></label>
@@ -548,7 +559,7 @@
 
                                 </div>
                             </div>
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="outflow" type="checkbox"
                                        name="additional-element">
                                 <label class="additional-element__label" for="outflow"></label>
@@ -564,7 +575,7 @@
 
                                 </div>
                             </div>
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="sill" type="checkbox"
                                        name="additional-element">
                                 <label class="additional-element__label" for="sill"></label>
@@ -580,7 +591,7 @@
 
                                 </div>
                             </div>
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="visor" type="checkbox"
                                        name="additional-element">
                                 <label class="additional-element__label" for="visor"></label>
@@ -601,9 +612,9 @@
 
                     <div class="lamination-wrapper">
                         <h3 class="lamination-header">Цветная ламинация</h3>
-                        <form class="addons" action="" id="lamination">
+                        <form class="addons row" action="" id="lamination">
 
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="none" type="radio"
                                        name="lamination" checked>
                                 <label class="additional-element__label" for="none"></label>
@@ -619,7 +630,7 @@
                                 </div>
                             </div>
 
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="oak" type="radio"
                                        name="lamination">
                                 <label class="additional-element__label" for="oak"></label>
@@ -635,7 +646,7 @@
                                 </div>
                             </div>
 
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="walnut" type="radio"
                                        name="lamination">
                                 <label class="additional-element__label" for="walnut"></label>
@@ -651,7 +662,7 @@
                                 </div>
                             </div>
 
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="cherry" type="radio"
                                        name="lamination">
                                 <label class="additional-element__label" for="cherry"></label>
@@ -667,7 +678,7 @@
                                 </div>
                             </div>
 
-                            <div class="each-additional-element">
+                            <div class="each-additional-element col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
                                 <input class="additional-element__checker" id="montana" type="radio"
                                        name="lamination">
                                 <label class="additional-element__label" for="montana"></label>
@@ -688,7 +699,7 @@
 
                 </div>
                 <!--step5-->
-                <div class="calc-content tab-pane fade show active" id="step5" role="tabpanel"
+                <div class="calc-content tab-pane fade" id="step5" role="tabpanel"
                      aria-labelledby="step5-tab">
 
                     <div class="step5-head-wrapper">
@@ -786,7 +797,7 @@
             </div>
 
             <!--buttons back and next-->
-            <div class="navtabs-wrapper">
+            <div class="navtabs-wrapper bottom-buttons">
                 <ul class="navtabs navbuttons nav nav-tabs" id="nav-buttons">
                     <li class="navtabs__item navbutton__item nav-item">
                         <a class="navtabs__link navbutton__link nav-link" href="#"><span
@@ -811,16 +822,15 @@
                 <div class="copy">
                     <p>Copyright &copy; 2018 ООО НИКС-М</p>
                     <p><a href="mailto:info@niks-m.com">info@niks-m.com</a></p>
-                    <p>г. Днепр, ул. Канатная, 130 Б</p>
+                    <p>г. Днепр, ул. Канатная, 130Б</p>
                 </div>
             </div>
             <div class="footer__block">
-                <div class="callback"><img src="img/callback.png" alt=""> Заказать обратный звонок</div>
+
                 <ul class="sociallink">
-                    <li class="sociallink_item"><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    </li><!--
-                    -->
-                    <li class="sociallink_item"><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    <li class="sociallink_item"><div class="callback"><img src="img/callback.png" alt=""><span>Заказать обратный звонок</span></div></li><!--
+                    --><li class="sociallink_item"><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li><!--
+                    --><li class="sociallink_item"><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>

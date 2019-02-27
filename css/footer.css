@@ -27,6 +27,15 @@
     flex-wrap: wrap;
 }
 
+.footer__block:first-child {
+    width: 30%;
+}
+
+.footer__block:last-child {
+    width: 45%!important;
+}
+
+
 .copy > p {
     margin: 0;
 }
@@ -48,10 +57,14 @@
 .sociallink_item {
     height: 30px;
     font-size: 25px;
-    border-left: none;
     border-right: 1px white solid;
     padding: 0 15px;
 }
+
+.sociallink_item:last-child {
+    border: none!important;
+}
+
 
 .send-message {
     display: flex;
