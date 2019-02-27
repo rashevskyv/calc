@@ -180,10 +180,6 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     font-weight: 400;
 }
 
-.calc-content__input {
-    height: 95px;
-}
-
 /*step1*/
 
 /*position for type of each window*/

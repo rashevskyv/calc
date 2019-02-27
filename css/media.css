@@ -9,10 +9,6 @@
         font-size: 16px!important;
     }
 
-    .product-type {
-        zoom: 0.9;
-    }
-
     .each-window-type__description {
         font-size: 18px;
     }
@@ -217,7 +213,8 @@
     #step5 {justify-content: space-evenly}
 
     .product-type {
-        zoom: 1;}
+        zoom: 0.9;
+    }
 
     .promo {
         width: 50%;
@@ -453,6 +450,10 @@
         grid-template-columns: 1fr;
     }
 
+    .horizontal {
+        flex-direction: column;
+    }
+
     .bottom-buttons > .navtabs {
         width: 100vw!important;
         position: relative;
@@ -604,15 +605,7 @@
     }
 
     .accordion > .card {overflow: unset}
-}
 
-
-@media screen and (max-width: 373px){
-
-    .calc-content__description h2 {
-        font-size: 26px;
-        line-height: 32px;
-    }
     .footer__block:first-child {
         width: 72%!important;
     }
@@ -632,6 +625,16 @@
 
     .sociallink_item {
         border: none;
+    }
+
+}
+
+
+@media screen and (max-width: 373px){
+
+    .calc-content__description h2 {
+        font-size: 26px;
+        line-height: 32px;
     }
 
     .promo {
