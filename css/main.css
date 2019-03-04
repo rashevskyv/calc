@@ -294,7 +294,16 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
 
 .window-type__picture {
     grid-area: window;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
 }
+
+.window-type__picture > img{
+    max-width: 250px;
+}
+
 
 .window-type__types {
     grid-area: types;
@@ -385,7 +394,7 @@ button:hover, button:active, button:focus, .button:hover, .button:active, .butto
     grid-template-areas: "mod_name mod_parts mod_parts mod_button";
     justify-items: center;
     align-items: center;
-
+    cursor: pointer;
 }
 
 .window-class__name {

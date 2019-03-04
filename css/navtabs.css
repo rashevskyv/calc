@@ -35,6 +35,7 @@
     box-shadow: 3px 0px 1px 0px rgba(0, 0, 0, 0.75);
     position: relative;
     transition: none;
+    cursor: default;
 }
 
 .navtabs__link::before {
@@ -104,6 +105,7 @@
 
 .navbutton__link {
     width: 140px;
+    cursor: pointer!important;
 }
 
 .navbutton__link:first-child {
